@@ -1,0 +1,182 @@
+[
+  {
+    "type": "image",
+    "content": "Real celebrity photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzM2NjlhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5SZWFsIEltYWdlPC90ZXh0Pjwvc3ZnPg==",
+    "description": "Authentic photo of a well-known public figure",
+    "source": "Verified news source",
+    "author": null,
+    "category": "celebrity"
+  },
+  {
+    "type": "quote",
+    "content": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "description": "Famous quote from Apple co-founder",
+    "source": "Stanford Commencement Speech, 2005",
+    "url": null,
+    "category": "inspiration"
+  },
+  {
+    "type": "image",
+    "content": "Real event photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjg5NjU2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5FdmVudCBQaG90bzwvdGV4dD48L3N2Zz4=",
+    "description": "Photo from a documented public event",
+    "source": "Official event photographer",
+    "author": null,
+    "category": "event"
+  },
+  {
+    "type": "quote",
+    "content": "Be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "description": "Well-known inspirational quote",
+    "source": "Various historical records",
+    "url": null,
+    "category": "inspiration"
+  },
+  {
+    "type": "image",
+    "content": "Real landscape photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjI4YjI4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5MYW5kc2NhcGU8L3RleHQ+PC9zdmc+",
+    "description": "Natural landscape photograph",
+    "source": "Professional photographer",
+    "author": null,
+    "category": "nature"
+  },
+  {
+    "type": "quote",
+    "content": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "description": "Famous quote from Beatles member",
+    "source": "Beautiful Boy (Darling Boy) song",
+    "url": null,
+    "category": "life"
+  },
+  {
+    "type": "image",
+    "content": "Real news photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNjY2NjY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5OZXdzIFBob3RvPC90ZXh0Pjwvc3ZnPg==",
+    "description": "Photo from verified news event",
+    "source": "Associated Press",
+    "author": null,
+    "category": "news"
+  },
+  {
+    "type": "quote",
+    "content": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "description": "Inspirational quote from former First Lady",
+    "source": "Various speeches and writings",
+    "url": null,
+    "category": "inspiration"
+  },
+  {
+    "type": "image",
+    "content": "Real portrait photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjOWM2NzNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5Qb3J0cmFpdDwvdGV4dD48L3N2Zz4=",
+    "description": "Professional portrait photograph",
+    "source": "Studio photographer",
+    "author": null,
+    "category": "portrait"
+  },
+  {
+    "type": "quote",
+    "content": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "description": "Famous motivational quote",
+    "source": "Various speeches",
+    "url": null,
+    "category": "motivation"
+  },
+  {
+    "type": "image",
+    "content": "Real architecture photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjYjQ5NmY3Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5BcmNoaXRlY3R1cmU8L3RleHQ+PC9zdmc+",
+    "description": "Photograph of famous building",
+    "source": "Architectural photographer",
+    "author": null,
+    "category": "architecture"
+  },
+  {
+    "type": "quote",
+    "content": "The best way to predict the future is to invent it.",
+    "author": "Alan Kay",
+    "description": "Famous quote about innovation",
+    "source": "Various interviews and speeches",
+    "url": null,
+    "category": "technology"
+  },
+  {
+    "type": "image",
+    "content": "Real sports photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGMyNjI2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5TcG9ydHMgUGhvdG88L3RleHQ+PC9zdmc+",
+    "description": "Action shot from sports event",
+    "source": "Sports photographer",
+    "author": null,
+    "category": "sports"
+  },
+  {
+    "type": "quote",
+    "content": "Education is the most powerful weapon which you can use to change the world.",
+    "author": "Nelson Mandela",
+    "description": "Famous quote about education",
+    "source": "Various speeches and writings",
+    "url": null,
+    "category": "education"
+  },
+  {
+    "type": "image",
+    "content": "Real wildlife photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjOGI1YzNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5XaWxkbGlmZTwvdGV4dD48L3N2Zz4=",
+    "description": "Wildlife photograph in natural habitat",
+    "source": "Wildlife photographer",
+    "author": null,
+    "category": "wildlife"
+  },
+  {
+    "type": "quote",
+    "content": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "description": "Inspirational quote about potential",
+    "source": "Various speeches",
+    "url": null,
+    "category": "inspiration"
+  },
+  {
+    "type": "image",
+    "content": "Real street photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNjc1YzNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5TdHJlZXQgUGhvdG88L3RleHQ+PC9zdmc+",
+    "description": "Street photography capturing daily life",
+    "source": "Street photographer",
+    "author": null,
+    "category": "street"
+  },
+  {
+    "type": "quote",
+    "content": "Innovation distinguishes between a leader and a follower.",
+    "author": "Steve Jobs",
+    "description": "Quote about leadership and innovation",
+    "source": "Various interviews",
+    "url": null,
+    "category": "leadership"
+  },
+  {
+    "type": "image",
+    "content": "Real food photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5Gb29kIFBob3RvPC90ZXh0Pjwvc3ZnPg==",
+    "description": "Professional food photography",
+    "source": "Food photographer",
+    "author": null,
+    "category": "food"
+  },
+  {
+    "type": "quote",
+    "content": "The journey of a thousand miles begins with one step.",
+    "author": "Lao Tzu",
+    "description": "Ancient Chinese proverb",
+    "source": "Tao Te Ching",
+    "url": null,
+    "category": "wisdom"
+  }
+] 

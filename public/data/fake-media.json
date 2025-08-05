@@ -1,0 +1,322 @@
+[
+  {
+    "type": "image",
+    "content": "AI-generated face",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY0NzQ3Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5BSSBGYWNlPC90ZXh0Pjwvc3ZnPg==",
+    "description": "Computer-generated human face",
+    "source": "StyleGAN AI model",
+    "author": null,
+    "category": "ai-generated",
+    "fakeIndicators": [
+      "Perfect symmetry",
+      "Unrealistic features",
+      "AI artifacts",
+      "Overly smooth skin",
+      "Inconsistent lighting"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "I never said that technology would solve all our problems.",
+    "author": "Albert Einstein",
+    "description": "Fabricated quote attributed to Einstein",
+    "source": "Misattributed online",
+    "url": null,
+    "category": "misattributed",
+    "fakeIndicators": [
+      "No historical record",
+      "Modern language",
+      "Misattributed",
+      "Contradicts known views",
+      "No source citation"
+    ]
+  },
+  {
+    "type": "image",
+    "content": "Deepfake video frame",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjOWM2N2JkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5EZWVwZmFrZTwvdGV4dD48L3N2Zz4=",
+    "description": "AI-manipulated video content",
+    "source": "Deepfake technology",
+    "author": null,
+    "category": "deepfake",
+    "fakeIndicators": [
+      "Facial inconsistencies",
+      "Unnatural movements",
+      "AI artifacts",
+      "Audio-video sync issues",
+      "Unrealistic expressions"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "The internet is just a passing fad.",
+    "author": "Bill Gates",
+    "description": "Fake quote about the internet",
+    "source": "Misattributed",
+    "url": null,
+    "category": "misattributed",
+    "fakeIndicators": [
+      "Never said this",
+      "Contradicts known views",
+      "No source",
+      "Fabricated",
+      "Misattributed"
+    ]
+  },
+  {
+    "type": "image",
+    "content": "Synthetic image",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGM0ZjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5TeW50aGV0aWM8L3RleHQ+PC9zdmc+",
+    "description": "Computer-generated image",
+    "source": "AI image generator",
+    "author": null,
+    "category": "ai-generated",
+    "fakeIndicators": [
+      "Unrealistic details",
+      "AI patterns",
+      "Synthetic appearance",
+      "Perfect composition",
+      "Artificial elements"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "Social media is the future of communication.",
+    "author": "Mark Zuckerberg",
+    "description": "Fake quote about social media",
+    "source": "Misquoted",
+    "url": null,
+    "category": "misquoted",
+    "fakeIndicators": [
+      "Taken out of context",
+      "Misquoted",
+      "Fabricated",
+      "No exact source",
+      "Misattributed"
+    ]
+  },
+  {
+    "type": "image",
+    "content": "AI-generated landscape",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY5ODAwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5BSyBMYW5kc2NhcGU8L3RleHQ+PC9zdmc+",
+    "description": "Computer-generated landscape",
+    "source": "AI art generator",
+    "author": null,
+    "category": "ai-generated",
+    "fakeIndicators": [
+      "Unrealistic physics",
+      "AI artifacts",
+      "Perfect composition",
+      "Synthetic colors",
+      "Artificial elements"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "Artificial intelligence will never replace human creativity.",
+    "author": "Steve Jobs",
+    "description": "Fake quote about AI",
+    "source": "Misattributed",
+    "url": null,
+    "category": "misattributed",
+    "fakeIndicators": [
+      "Died before AI era",
+      "No record of this quote",
+      "Misattributed",
+      "Modern context",
+      "Fabricated"
+    ]
+  },
+  {
+    "type": "image",
+    "content": "Deepfake portrait",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGM2MjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5EZWVwZmFrZTwvdGV4dD48L3N2Zz4=",
+    "description": "AI-manipulated portrait",
+    "source": "Deepfake technology",
+    "author": null,
+    "category": "deepfake",
+    "fakeIndicators": [
+      "Facial manipulation",
+      "Unnatural features",
+      "AI artifacts",
+      "Inconsistent details",
+      "Synthetic appearance"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "Climate change is not a real concern.",
+    "author": "Elon Musk",
+    "description": "Fake quote about climate change",
+    "source": "Fabricated",
+    "url": null,
+    "category": "fabricated",
+    "fakeIndicators": [
+      "Contradicts public statements",
+      "No source",
+      "Fabricated",
+      "Misattributed",
+      "False information"
+    ]
+  },
+  {
+    "type": "image",
+    "content": "AI-generated architecture",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5BSiBBcmNoaXRlY3R1cmU8L3RleHQ+PC9zdmc+",
+    "description": "Computer-generated building design",
+    "source": "AI architecture generator",
+    "author": null,
+    "category": "ai-generated",
+    "fakeIndicators": [
+      "Unrealistic physics",
+      "AI patterns",
+      "Synthetic materials",
+      "Perfect symmetry",
+      "Artificial design"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "The best way to predict the future is to ignore it.",
+    "author": "Alan Kay",
+    "description": "Fake quote about prediction",
+    "source": "Misquoted",
+    "url": null,
+    "category": "misquoted",
+    "fakeIndicators": [
+      "Misquoted",
+      "Contradicts original",
+      "No source",
+      "Fabricated",
+      "Misattributed"
+    ]
+  },
+  {
+    "type": "image",
+    "content": "Synthetic wildlife",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjOGI1YzNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5TeW50aGV0aWMgV2lsZGxpZmU8L3RleHQ+PC9zdmc+",
+    "description": "AI-generated animal photo",
+    "source": "AI image generator",
+    "author": null,
+    "category": "ai-generated",
+    "fakeIndicators": [
+      "Unrealistic anatomy",
+      "AI artifacts",
+      "Synthetic fur texture",
+      "Perfect composition",
+      "Artificial environment"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "Education is overrated in the modern world.",
+    "author": "Nelson Mandela",
+    "description": "Fake quote about education",
+    "source": "Fabricated",
+    "url": null,
+    "category": "fabricated",
+    "fakeIndicators": [
+      "Contradicts known views",
+      "No source",
+      "Fabricated",
+      "Misattributed",
+      "False information"
+    ]
+  },
+  {
+    "type": "image",
+    "content": "AI-generated food",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmY2YjNhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5BSiBGb29kPC90ZXh0Pjwvc3ZnPg==",
+    "description": "Computer-generated food image",
+    "source": "AI food generator",
+    "author": null,
+    "category": "ai-generated",
+    "fakeIndicators": [
+      "Unrealistic textures",
+      "AI artifacts",
+      "Synthetic appearance",
+      "Perfect presentation",
+      "Artificial ingredients"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "The journey of a thousand miles is impossible.",
+    "author": "Lao Tzu",
+    "description": "Fake quote about journeys",
+    "source": "Misquoted",
+    "url": null,
+    "category": "misquoted",
+    "fakeIndicators": [
+      "Misquoted",
+      "Contradicts original",
+      "No source",
+      "Fabricated",
+      "Misattributed"
+    ]
+  },
+  {
+    "type": "image",
+    "content": "Deepfake news photo",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNjY2NjY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5EZWVwZmFrZSBOZXdzPC90ZXh0Pjwvc3ZnPg==",
+    "description": "AI-manipulated news image",
+    "source": "Deepfake technology",
+    "author": null,
+    "category": "deepfake",
+    "fakeIndicators": [
+      "Facial manipulation",
+      "Unnatural elements",
+      "AI artifacts",
+      "Inconsistent details",
+      "Synthetic background"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "Innovation is just copying with style.",
+    "author": "Steve Jobs",
+    "description": "Fake quote about innovation",
+    "source": "Fabricated",
+    "url": null,
+    "category": "fabricated",
+    "fakeIndicators": [
+      "No record of this quote",
+      "Fabricated",
+      "Misattributed",
+      "No source",
+      "False information"
+    ]
+  },
+  {
+    "type": "image",
+    "content": "AI-generated sports",
+    "url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGMyNjI2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5BSiBTcG9ydHM8L3RleHQ+PC9zdmc+",
+    "description": "Computer-generated sports scene",
+    "source": "AI sports generator",
+    "author": null,
+    "category": "ai-generated",
+    "fakeIndicators": [
+      "Unrealistic physics",
+      "AI artifacts",
+      "Synthetic movement",
+      "Perfect composition",
+      "Artificial environment"
+    ]
+  },
+  {
+    "type": "quote",
+    "content": "The only limit is your imagination, which is also limited.",
+    "author": "Franklin D. Roosevelt",
+    "description": "Fake quote about limits",
+    "source": "Fabricated",
+    "url": null,
+    "category": "fabricated",
+    "fakeIndicators": [
+      "No record of this quote",
+      "Fabricated",
+      "Misattributed",
+      "Contradictory logic",
+      "False information"
+    ]
+  }
+] 

@@ -1,0 +1,637 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    color: #ffffff;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Screen Management */
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.screen.active {
+    display: flex;
+}
+
+/* Loading Screen */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading-content {
+    text-align: center;
+}
+
+.loading-logo h1 {
+    font-family: 'Orbitron', monospace;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff;
+    margin-bottom: 2rem;
+}
+
+.loading-bar {
+    width: 400px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 2rem auto;
+    border: 1px solid #00ffff;
+}
+
+.loading-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #00ffff, #0080ff);
+    width: 0%;
+    animation: loading 3s ease-in-out infinite;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+@keyframes loading {
+    0% { width: 0%; }
+    50% { width: 70%; }
+    100% { width: 100%; }
+}
+
+.loading-text {
+    font-size: 1.2rem;
+    color: #888;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Main Menu */
+.menu-container {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.game-title h1 {
+    font-family: 'Orbitron', monospace;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #00ffff;
+    text-shadow: 0 0 30px #00ffff;
+    margin-bottom: 1rem;
+    letter-spacing: 4px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #888;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.menu-footer {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Game UI */
+.game-ui {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* HUD */
+.hud-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 10;
+}
+
+.hud-left, .hud-right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hud-center {
+    display: flex;
+    justify-content: center;
+}
+
+.score-display, .combo-display, .level-display, .timer-display, .lives-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.label {
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.value {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.lives-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.life {
+    width: 20px;
+    height: 20px;
+    background: #ff4444;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff4444;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Game Canvas */
+#gameCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+    cursor: crosshair;
+}
+
+/* Game Controls */
+.game-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.control-info {
+    display: flex;
+    gap: 3rem;
+}
+
+.control-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.key {
+    background: #333;
+    color: #00ffff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-family: 'Orbitron', monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 5px #00ffff;
+}
+
+.action {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-weight: 500;
+}
+
+/* Overlay Menus */
+.overlay-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.overlay-menu.hidden {
+    display: none;
+}
+
+.menu-content, .explanation-content {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.menu-content h2, .explanation-content h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2rem;
+    color: #00ffff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.explanation-text {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: left;
+    line-height: 1.6;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Game Over Screen */
+.game-over-container {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.game-over-container h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 3rem;
+    color: #ff4444;
+    text-shadow: 0 0 20px #ff4444;
+    margin-bottom: 2rem;
+}
+
+.final-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.stat-item {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name-input-container {
+    margin: 2rem 0;
+}
+
+.name-input-container label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+#player-name {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    padding: 0.8rem;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-family: 'Orbitron', monospace;
+}
+
+#player-name:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.game-over-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Leaderboard Screen */
+.leaderboard-container {
+    text-align: center;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.leaderboard-container h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    color: #00ffff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.leaderboard-list {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.leaderboard-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s ease;
+}
+
+.leaderboard-entry:hover {
+    background: rgba(0, 255, 255, 0.1);
+}
+
+.leaderboard-entry:last-child {
+    border-bottom: none;
+}
+
+.rank {
+    font-family: 'Orbitron', monospace;
+    font-weight: 700;
+    color: #00ffff;
+    min-width: 50px;
+}
+
+.player-name {
+    flex: 1;
+    text-align: left;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+.score-value {
+    font-family: 'Orbitron', monospace;
+    font-weight: 700;
+    color: #00ffff;
+    min-width: 100px;
+}
+
+/* Tutorial Screen */
+.tutorial-container {
+    text-align: center;
+    max-width: 700px;
+    padding: 2rem;
+}
+
+.tutorial-container h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    color: #00ffff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.tutorial-content {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.tutorial-step {
+    margin-bottom: 2rem;
+}
+
+.tutorial-step:last-child {
+    margin-bottom: 0;
+}
+
+.tutorial-step h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.3rem;
+    color: #00ffff;
+    margin-bottom: 1rem;
+}
+
+.tutorial-step p, .tutorial-step ul {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.tutorial-step ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tutorial-step li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.tutorial-step li:before {
+    content: "▶";
+    color: #00ffff;
+    position: absolute;
+    left: 0;
+}
+
+/* Settings Screen */
+.settings-container {
+    text-align: center;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.settings-container h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    color: #00ffff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.settings-content {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.setting-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.setting-group:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.setting-group label {
+    font-size: 1.1rem;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.setting-group input[type="range"] {
+    width: 150px;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.setting-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #00ffff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.setting-group select {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.setting-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #00ffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hud-top {
+        padding: 0 1rem;
+        height: 60px;
+    }
+    
+    .control-info {
+        gap: 1rem;
+    }
+    
+    .control-item {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+    
+    .key {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .action {
+        font-size: 0.8rem;
+    }
+    
+    .final-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-over-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .setting-group {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-container, .game-over-container, .leaderboard-container, 
+    .tutorial-container, .settings-container {
+        padding: 1rem;
+    }
+    
+    .game-title h1 {
+        font-size: 2rem;
+    }
+    
+    .hud-left, .hud-right {
+        gap: 1rem;
+    }
+    
+    .value {
+        font-size: 1.2rem;
+    }
+} 

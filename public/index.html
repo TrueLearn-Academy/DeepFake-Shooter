@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFake Defense 🛡️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cyberpunk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <h1 class="glitch" data-text="DEEPFAKE DEFENSE">DEEPFAKE DEFENSE</h1>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <p class="loading-text">Initializing AI detection systems...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="main-menu" class="screen active">
+        <div class="menu-container">
+            <div class="game-title">
+                <h1 class="glitch" data-text="DEEPFAKE DEFENSE">DEEPFAKE DEFENSE</h1>
+                <p class="subtitle">Defend the Digital Frontier</p>
+            </div>
+            
+            <div class="menu-buttons">
+                <button id="start-game" class="cyber-button">
+                    <span class="cyber-button__glitch"></span>
+                    <span class="cyber-button__tag">START GAME</span>
+                    <span class="cyber-button__text">START GAME</span>
+                </button>
+                
+                <button id="show-leaderboard" class="cyber-button">
+                    <span class="cyber-button__glitch"></span>
+                    <span class="cyber-button__tag">LEADERBOARD</span>
+                    <span class="cyber-button__text">LEADERBOARD</span>
+                </button>
+                
+                <button id="show-tutorial" class="cyber-button">
+                    <span class="cyber-button__glitch"></span>
+                    <span class="cyber-button__tag">TUTORIAL</span>
+                    <span class="cyber-button__text">TUTORIAL</span>
+                </button>
+                
+                <button id="show-settings" class="cyber-button">
+                    <span class="cyber-button__glitch"></span>
+                    <span class="cyber-button__tag">SETTINGS</span>
+                    <span class="cyber-button__text">SETTINGS</span>
+                </button>
+            </div>
+            
+            <div class="menu-footer">
+                <p class="version">v1.0.0 | AI-Powered Media Detection</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <div class="game-ui">
+            <!-- Top HUD -->
+            <div class="hud-top">
+                <div class="hud-left">
+                    <div class="score-display">
+                        <span class="label">SCORE</span>
+                        <span id="score" class="value">0</span>
+                    </div>
+                    <div class="combo-display">
+                        <span class="label">COMBO</span>
+                        <span id="combo" class="value">x1</span>
+                    </div>
+                </div>
+                
+                <div class="hud-center">
+                    <div class="level-display">
+                        <span class="label">LEVEL</span>
+                        <span id="level" class="value">1</span>
+                    </div>
+                </div>
+                
+                <div class="hud-right">
+                    <div class="lives-display">
+                        <span class="label">LIVES</span>
+                        <div id="lives" class="lives-container">
+                            <div class="life"></div>
+                            <div class="life"></div>
+                            <div class="life"></div>
+                        </div>
+                    </div>
+                    <div class="timer-display">
+                        <span class="label">TIME</span>
+                        <span id="timer" class="value">00:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Canvas -->
+            <canvas id="gameCanvas" width="1200" height="800"></canvas>
+
+            <!-- Bottom Controls -->
+            <div class="game-controls">
+                <div class="control-info">
+                    <div class="control-item">
+                        <span class="key">SPACE</span>
+                        <span class="action">SHOOT FAKE</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">Q</span>
+                        <span class="action">DOUBT</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">A/D</span>
+                        <span class="action">MOVE</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">ESC</span>
+                        <span class="action">PAUSE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pause Menu -->
+        <div id="pause-menu" class="overlay-menu hidden">
+            <div class="menu-content">
+                <h2>GAME PAUSED</h2>
+                <button id="resume-game" class="cyber-button">RESUME</button>
+                <button id="restart-game" class="cyber-button">RESTART</button>
+                <button id="quit-game" class="cyber-button">QUIT TO MENU</button>
+            </div>
+        </div>
+
+        <!-- Doubt Explanation -->
+        <div id="doubt-explanation" class="overlay-menu hidden">
+            <div class="explanation-content">
+                <h3>AI ANALYSIS</h3>
+                <div id="explanation-text" class="explanation-text">
+                    Analyzing media content...
+                </div>
+                <button id="close-explanation" class="cyber-button">CONTINUE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="screen">
+        <div class="game-over-container">
+            <h2 class="glitch" data-text="GAME OVER">GAME OVER</h2>
+            
+            <div class="final-stats">
+                <div class="stat-item">
+                    <span class="label">FINAL SCORE</span>
+                    <span id="final-score" class="value">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">LEVEL REACHED</span>
+                    <span id="final-level" class="value">1</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">TIME SURVIVED</span>
+                    <span id="final-time" class="value">00:00</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">ACCURACY</span>
+                    <span id="final-accuracy" class="value">0%</span>
+                </div>
+            </div>
+
+            <div class="name-input-container">
+                <label for="player-name">Enter your name for the leaderboard:</label>
+                <input type="text" id="player-name" maxlength="20" placeholder="CYBER_WARRIOR">
+                <button id="submit-score" class="cyber-button">SUBMIT SCORE</button>
+            </div>
+
+            <div class="game-over-buttons">
+                <button id="play-again" class="cyber-button">PLAY AGAIN</button>
+                <button id="back-to-menu" class="cyber-button">MAIN MENU</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaderboard Screen -->
+    <div id="leaderboard-screen" class="screen">
+        <div class="leaderboard-container">
+            <h2>GLOBAL LEADERBOARD</h2>
+            <div id="leaderboard-list" class="leaderboard-list">
+                <!-- Leaderboard entries will be populated here -->
+            </div>
+            <button id="back-from-leaderboard" class="cyber-button">BACK TO MENU</button>
+        </div>
+    </div>
+
+    <!-- Tutorial Screen -->
+    <div id="tutorial-screen" class="screen">
+        <div class="tutorial-container">
+            <h2>HOW TO PLAY</h2>
+            <div class="tutorial-content">
+                <div class="tutorial-step">
+                    <h3>🎯 Objective</h3>
+                    <p>Identify and shoot AI-generated media before it reaches your defense line. Let real content pass through safely.</p>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>🎮 Controls</h3>
+                    <ul>
+                        <li><strong>SPACE</strong> - Shoot fake content</li>
+                        <li><strong>Q</strong> - Use doubt for AI explanation</li>
+                        <li><strong>A/D</strong> or <strong>←/→</strong> - Move shooter left/right</li>
+                        <li><strong>ESC</strong> - Pause game</li>
+                    </ul>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>🏆 Scoring</h3>
+                    <ul>
+                        <li><strong>+10</strong> - Correct identification</li>
+                        <li><strong>-5</strong> - Wrong shot</li>
+                        <li><strong>+2</strong> - Combo bonus per consecutive correct</li>
+                        <li><strong>0</strong> - Using doubt (neutral)</li>
+                    </ul>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>⚠️ Game Over</h3>
+                    <p>You lose a life for each fake that passes through. Game ends when all lives are lost.</p>
+                </div>
+            </div>
+            <button id="back-from-tutorial" class="cyber-button">GOT IT!</button>
+        </div>
+    </div>
+
+    <!-- Settings Screen -->
+    <div id="settings-screen" class="screen">
+        <div class="settings-container">
+            <h2>SETTINGS</h2>
+            <div class="settings-content">
+                <div class="setting-group">
+                    <label for="sound-volume">Sound Volume</label>
+                    <input type="range" id="sound-volume" min="0" max="100" value="50">
+                    <span id="sound-value">50%</span>
+                </div>
+                
+                <div class="setting-group">
+                    <label for="music-volume">Music Volume</label>
+                    <input type="range" id="music-volume" min="0" max="100" value="30">
+                    <span id="music-value">30%</span>
+                </div>
+                
+                <div class="setting-group">
+                    <label for="difficulty">Starting Difficulty</label>
+                    <select id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                
+                <div class="setting-group">
+                    <label>
+                        <input type="checkbox" id="fullscreen-toggle">
+                        Fullscreen Mode
+                    </label>
+                </div>
+            </div>
+            <button id="back-from-settings" class="cyber-button">SAVE & BACK</button>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="shoot-sound" preload="auto">
+        <source src="assets/sounds/shoot.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="hit-sound" preload="auto">
+        <source src="assets/sounds/hit.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="miss-sound" preload="auto">
+        <source src="assets/sounds/miss.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="game-over-sound" preload="auto">
+        <source src="assets/sounds/game-over.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="background-music" loop preload="auto">
+        <source src="assets/sounds/background.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Scripts -->
+    <script src="js/audio.js"></script>
+    <script src="js/media.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html> 
