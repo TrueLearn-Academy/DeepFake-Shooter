@@ -88,7 +88,7 @@ deepfake-defense/
 ### Prerequisites
 - Node.js (v14+)
 - MongoDB (local or Atlas)
-- OpenAI API key
+- OpenAI API key (optional)
 
 ### Installation
 
@@ -97,6 +97,27 @@ deepfake-defense/
 git clone https://github.com/yourusername/deepfake-defense.git
 cd deepfake-defense
 ```
+
+### Quick Deploy to Render
+
+**One-Click Deploy:**
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy/schema-new?template=https://github.com/yourusername/deepfake-defense)
+
+**Manual Deploy:**
+1. Fork this repository to your GitHub account
+2. Go to [render.com](https://render.com) and sign up
+3. Click "New +" → "Web Service"
+4. Connect your GitHub repository
+5. Configure:
+   - **Name**: `deepfake-defense`
+   - **Environment**: `Node`
+   - **Build Command**: `npm install`
+   - **Start Command**: `npm start`
+6. Click "Create Web Service"
+
+Your app will be live at `https://your-app-name.onrender.com`
+
+### Local Development
 
 2. Install dependencies:
 ```bash
